@@ -1,0 +1,114 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --paragraphs: hsla(0, 0%, 100%, 0.75);
+  --background: hsl(0, 0%, 95%);
+}
+body {
+  margin: 4rem auto;
+  padding: 0;
+  background-color: var(--background);
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: auto 2rem;
+  border-radius: 0.5rem;
+}
+.card {
+  padding: 2rem;
+}
+.card--orange {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.card--blue {
+  background-color: var(--Dark-cyan);
+}
+.card--green {
+  background-color: var(--Very-dark-cyan);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.card__img {
+  height: 2.5rem;
+  width: 3.5rem;
+}
+.card__title {
+  color: var(--background);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.card__details {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: var(--paragraphs);
+}
+.card__btn {
+  background-color: var(--background);
+  border: none;
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  color: black;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.card__btn:hover{
+  border: 1px solid var(--background);
+  color: var(--background);
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn--orange {
+  color: var(--Bright-orange);
+}
+.btn--blue {
+  color: var(--Dark-cyan);
+}
+.btn--green {
+  color: var(--Very-dark-cyan);
+}
+footer {
+  margin-top: 1rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    width: 43.75rem;
+    margin: auto auto;
+  }
+  .card {
+    height: 25rem;
+  }
+  .card--orange {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0rem;
+  }
+  .card--blue {
+    background-color: var(--Dark-cyan);
+  }
+  .card--green {
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+}

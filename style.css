@@ -16,22 +16,19 @@ body {
   grid-template-rows: repeat(3, 1fr);
   margin: auto 2rem;
   border-radius: 0.5rem;
+  overflow: hidden;
 }
 .card {
   padding: 2rem;
 }
 .card--orange {
   background-color: var(--Bright-orange);
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 .card--blue {
   background-color: var(--Dark-cyan);
 }
 .card--green {
   background-color: var(--Very-dark-cyan);
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
 }
 .card__img {
   height: 2.5rem;
@@ -91,24 +88,9 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     width: 43.75rem;
-    margin: auto auto;
+    margin: auto;
   }
   .card {
     height: 25rem;
-  }
-  .card--orange {
-    background-color: var(--Bright-orange);
-    border-top-left-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-right-radius: 0rem;
-  }
-  .card--blue {
-    background-color: var(--Dark-cyan);
-  }
-  .card--green {
-    background-color: var(--Very-dark-cyan);
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
   }
 }
